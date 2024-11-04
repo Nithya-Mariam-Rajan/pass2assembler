@@ -1,0 +1,134 @@
+/* General Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Changed font to Roboto */
+    margin: 0;
+    padding: 20px;
+    background-color: #e0f2f1;
+    /* Soft teal background */
+    color: #37474f;
+    /* Dark slate gray text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    /* Border around the entire container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for depth */
+    background-color: #ffffff;
+    /* White container background */
+}
+
+
+/* Header Styles */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+
+/* Upload Section */
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    /* Stack vertically */
+    align-items: center;
+    /* Center align items */
+    margin-bottom: 20px;
+}
+
+.upload-section input[type="file"] {
+    width: 80%;
+    /* Set width for file input */
+    margin-bottom: 10px;
+    /* Space between input and button */
+    padding: 10px;
+    border: 2px solid #00796b;
+    /* Teal border */
+    border-radius: 5px;
+    background-color: #b2dfdb;
+    /* Light teal for input background */
+    color: #37474f;
+    /* Dark slate gray text color */
+}
+
+
+/* Button Styles */
+
+button {
+    padding: 8px 12px;
+    /* Reduced button size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #4db6ac;
+    /* Soft teal button */
+    color: white;
+    transition: background-color 0.3s;
+    width: 80%;
+    /* Set button width to match input */
+    text-align: center;
+    /* Center the text in the button */
+}
+
+button:hover {
+    background-color: #26a69a;
+    /* Darker teal on hover */
+}
+
+
+/* Textarea Styles */
+
+textarea {
+    width: 80%;
+    /* Decreased width */
+    height: 100px;
+    /* Decreased height */
+    padding: 10px;
+    border: 2px solid #ccc;
+    /* More visible border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: monospace;
+    background-color: #ffffff;
+    /* White background inside the text box */
+    color: #37474f;
+    /* Dark slate gray text color */
+    display: block;
+    margin: 0 auto;
+    /* Center alignment */
+}
+
+
+/* Output Section */
+
+.output-section {
+    margin-bottom: 20px;
+}
+
+
+/* Additional Responsive Styles */
+
+@media (max-width: 600px) {
+    .upload-section {
+        flex-direction: column;
+        /* Stack vertically */
+        align-items: center;
+        /* Center align items */
+    }
+    .upload-section input[type="file"],
+    button {
+        width: 100%;
+        /* Full width on mobile */
+    }
+}
